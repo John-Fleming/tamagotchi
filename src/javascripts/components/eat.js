@@ -6,9 +6,23 @@ const printFullScore = () => {
   let domString = '';
   domString += '<h2>Eat</h2>';
   domString += `<p>${fullScore}</p>`;
-  domString += '<button class="healthy-food">Healthy Food</button>';
-  domString += '<button class="unhealthy-food">Unhealthy Food</button>';
+  domString += '<button id="healthy-food-btn">Healthy Food</button>';
+  domString += '<button id="unhealthy-food-btn">Unhealthy Food</button>';
   utils.printToDom('eat', domString);
+  // $('#healthy-food-btn').click(eatHealthyFood); // need to figure out where to put this click event function
+  // $('#unhealthy-food-btn').click(eatUnhealthyFood);
 };
 
-export default { printFullScore };
+const eatHealthyFood = () => {
+  // const healthyFoodBtn = e.target.id;
+  eatData.increaseFullScore();
+  printFullScore();
+};
+
+const eatUnhealthyFood = () => {
+  // const healthyFoodBtn = e.target.id;
+  eatData.decreaseFullScore();
+  printFullScore();
+};
+
+export default { printFullScore, eatHealthyFood, eatUnhealthyFood };
