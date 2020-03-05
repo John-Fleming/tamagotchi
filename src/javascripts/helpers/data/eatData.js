@@ -1,4 +1,4 @@
-let full = 50;
+let full = 100;
 
 const increaseFullScore = () => {
   if (full <= 90) {
