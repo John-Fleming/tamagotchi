@@ -9,18 +9,14 @@ const printFullScore = () => {
   domString += '<button id="healthy-food-btn">Healthy Food</button>';
   domString += '<button id="unhealthy-food-btn">Unhealthy Food</button>';
   utils.printToDom('eat', domString);
-  // $('#healthy-food-btn').click(eatHealthyFood); // need to figure out where to put this click event function
-  // $('#unhealthy-food-btn').click(eatUnhealthyFood);
 };
 
 const eatHealthyFood = () => {
-  // const healthyFoodBtn = e.target.id;
   eatData.increaseFullScore();
   printFullScore();
 };
 
 const eatUnhealthyFood = () => {
-  // const healthyFoodBtn = e.target.id;
   eatData.decreaseFullScore();
   printFullScore();
 };
