@@ -16,6 +16,6 @@ const slightlyIncreaseFunScore = () => {
   }
 };
 
-const getFull = () => fun;
+const getFun = () => fun;
 
-export default { getFull, increaseFunScore, slightlyIncreaseFunScore };
+export default { getFun, increaseFunScore, slightlyIncreaseFunScore };

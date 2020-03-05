@@ -2,7 +2,7 @@ import utils from '../helpers/utils';
 import funData from '../helpers/data/funData';
 
 const printFunScore = () => {
-  const funScore = funData.getFull();
+  const funScore = funData.getFun();
   let domString = '';
   domString += '<h2>Play</h2>';
   domString += `<p>${funScore}</p>`;
