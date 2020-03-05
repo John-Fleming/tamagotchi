@@ -2,6 +2,7 @@ import '../styles/main.scss';
 import eat from './components/eat';
 import fun from './components/fun';
 import fight from './components/fight';
+import sleep from './components/sleep';
 
 const init = () => {
   eat.printFullScore();
@@ -13,6 +14,9 @@ const init = () => {
   fight.printStrengthScore();
   $('#run-away-btn').click(fight.runAway);
   $('#violence-btn').click(fight.fight);
+  sleep.printEnergyScore();
+  $('#nap-btn').click(sleep.takeANap);
+  $('#deep-slumber-btn').click(sleep.deepSlumber);
 };
 
 init();
