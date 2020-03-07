@@ -6,17 +6,17 @@ import sleep from './components/sleep';
 
 const init = () => {
   eat.printFullScore();
-  $('#healthy-food-btn').click(eat.eatHealthyFood);
-  $('#unhealthy-food-btn').click(eat.eatUnhealthyFood);
+  $('body').on('click', '#healthy-food-btn', eat.eatHealthyFood);
+  $('body').on('click', '#unhealthy-food-btn', eat.eatUnhealthyFood);
   fun.printFunScore();
-  $('#super-fun-btn').click(fun.superFunActivity);
-  $('#slightly-fun-btn').click(fun.slightlyFunActivity);
+  $('body').on('click', '#super-fun-btn', fun.superFunActivity);
+  $('body').on('click', '#slightly-fun-btn', fun.slightlyFunActivity);
   fight.printStrengthScore();
-  $('#run-away-btn').click(fight.runAway);
-  $('#violence-btn').click(fight.fight);
+  $('body').on('click', '#run-away-btn', fight.runAway);
+  $('body').on('click', '#violence-btn', fight.fight);
   sleep.printEnergyScore();
-  $('#nap-btn').click(sleep.takeANap);
-  $('#deep-slumber-btn').click(sleep.deepSlumber);
+  $('body').on('click', '#nap-btn', sleep.takeANap);
+  $('body').on('click', '#deep-slumber-btn', sleep.deepSlumber);
 };
 
 init();
