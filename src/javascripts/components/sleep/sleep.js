@@ -1,5 +1,5 @@
-import utils from '../helpers/utils';
-import sleepData from '../helpers/data/sleepData';
+import utils from '../../helpers/utils';
+import sleepData from '../../helpers/data/sleepData';
 
 const printEnergyScore = () => {
   const energyScore = sleepData.getEnergy();

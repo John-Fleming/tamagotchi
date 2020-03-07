@@ -1,5 +1,5 @@
-import utils from '../helpers/utils';
-import eatData from '../helpers/data/eatData';
+import utils from '../../helpers/utils';
+import eatData from '../../helpers/data/eatData';
 
 const printFullScore = () => {
   const fullScore = eatData.getFull();

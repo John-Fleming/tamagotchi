@@ -1,5 +1,5 @@
-import utils from '../helpers/utils';
-import fightData from '../helpers/data/fightData';
+import utils from '../../helpers/utils';
+import fightData from '../../helpers/data/fightData';
 
 const printStrengthScore = () => {
   const strengthScore = fightData.getStrength();

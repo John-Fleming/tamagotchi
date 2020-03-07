@@ -1,5 +1,5 @@
-import utils from '../helpers/utils';
-import funData from '../helpers/data/funData';
+import utils from '../../helpers/utils';
+import funData from '../../helpers/data/funData';
 
 const printFunScore = () => {
   const funScore = funData.getFun();
