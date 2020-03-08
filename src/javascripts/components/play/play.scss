@@ -1,5 +1,9 @@
 @import '../../../styles/colors';
+@import '../../../styles/variables';
 
-.play-container {
-  background-color: $purple;
+#play {
+  @include quadrant-set($play);
+  .play-container {
+    @include set-quad-content($play);
+  }
 }

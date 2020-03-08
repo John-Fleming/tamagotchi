@@ -1,5 +1,9 @@
 @import '../../../styles/colors';
+@import '../../../styles/variables';
 
-.fight-container {
-  background-color: $pink;
+#fight {
+  @include quadrant-set($fight);
+  .fight-container {
+    @include set-quad-content($fight);
+  }
 }

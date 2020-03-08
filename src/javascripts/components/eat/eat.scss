@@ -1,5 +1,9 @@
 @import '../../../styles/colors';
+@import '../../../styles/variables';
 
-.eat-container {
-  background-color: $blue;
+#eat {
+  @include quadrant-set($eat);
+  .eat-container {
+    @include set-quad-content($eat);
+  }
 }

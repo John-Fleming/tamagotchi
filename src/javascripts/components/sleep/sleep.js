@@ -7,7 +7,7 @@ const printEnergyScore = () => {
   let domString = '';
   domString += '<div class="sleep-container">';
   domString += '<h2>Sleep</h2>';
-  domString += `<p>${energyScore}</p>`;
+  domString += `<p>Energy // ${energyScore}</p>`;
   domString += '<button id="nap-btn">Nap</button>';
   domString += '<button id="deep-slumber-btn">Deep Slumber</button>';
   domString += '</div>';

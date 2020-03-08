@@ -7,7 +7,7 @@ const printFunScore = () => {
   let domString = '';
   domString += '<div class="play-container">';
   domString += '<h2>Play</h2>';
-  domString += `<p>${funScore}</p>`;
+  domString += `<p>Fun // ${funScore}</p>`;
   domString += '<button id="super-fun-btn">Super Fun Activity</button>';
   domString += '<button id="slightly-fun-btn">Slightly Fun Activity</button>';
   domString += '</div>';

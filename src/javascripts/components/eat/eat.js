@@ -7,7 +7,7 @@ const printFullScore = () => {
   let domString = '';
   domString += '<div class="eat-container">';
   domString += '<h2>Eat</h2>';
-  domString += `<p>${fullScore}</p>`;
+  domString += `<p>Full // ${fullScore}</p>`;
   domString += '<button id="healthy-food-btn">Healthy Food</button>';
   domString += '<button id="unhealthy-food-btn">Unhealthy Food</button>';
   domString += '</div>';

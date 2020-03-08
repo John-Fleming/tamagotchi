@@ -7,7 +7,7 @@ const printStrengthScore = () => {
   let domString = '';
   domString += '<div class="fight-container">';
   domString += '<h2>Fight</h2>';
-  domString += `<p>${strengthScore}</p>`;
+  domString += `<p>Strength // ${strengthScore}</p>`;
   domString += '<button id="run-away-btn">Run Away</button>';
   domString += '<button id="violence-btn">Commit Violence</button>';
   domString += '</div>';
