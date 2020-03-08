@@ -1,13 +1,16 @@
-import utils from '../helpers/utils';
-import fightData from '../helpers/data/fightData';
+import utils from '../../helpers/utils';
+import fightData from '../../helpers/data/fightData';
+import './fight.scss';
 
 const printStrengthScore = () => {
   const strengthScore = fightData.getStrength();
   let domString = '';
+  domString += '<div class="fight-container">';
   domString += '<h2>Fight</h2>';
-  domString += `<p>${strengthScore}</p>`;
+  domString += `<p>Strength // ${strengthScore}</p>`;
   domString += '<button id="run-away-btn">Run Away</button>';
   domString += '<button id="violence-btn">Commit Violence</button>';
+  domString += '</div>';
   utils.printToDom('fight', domString);
 };
 

@@ -3,3 +3,8 @@
 body {
   background-color: azure;
 }
+
+#app {
+  display: flex;
+  flex-flow: row wrap;
+}

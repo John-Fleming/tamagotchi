@@ -1,0 +1,9 @@
+@import '../../../styles/colors';
+@import '../../../styles/variables';
+
+#sleep {
+  @include quadrant-set($sleep);
+  .sleep-container {
+    @include set-quad-content($sleep);
+  }
+}
