@@ -9,7 +9,10 @@ import './progress.scss';
 const printProgressScore = () => {
   const progressScore = progressData.getProgressScore();
   let domString = '';
-  domString += `<h2>${progressScore}</h2>`;
+  domString += `<h2>Progress Score // ${progressScore}</h2>`;
+  domString += '<div class="meter">';
+  domString += `<span style="width: ${progressScore}%"></span>`;
+  domString += '</div>';
   utils.printToDom('progress', domString);
 };
 
