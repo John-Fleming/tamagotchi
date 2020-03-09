@@ -1,13 +1,9 @@
-const allScores = [];
-const progressScore = '';
+let progressScore = '';
 
 const setProgressScore = (score) => {
-  allScores.push(score);
-  // line to find the average of all scores then save that to the below
-  // progressScore =
+  progressScore = Math.floor(score);
 };
 
-const getAllScores = () => allScores;
 const getProgressScore = () => progressScore;
 
-export default { setProgressScore, getProgressScore, getAllScores };
+export default { setProgressScore, getProgressScore };

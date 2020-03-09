@@ -1,5 +1,6 @@
 import utils from '../../helpers/utils';
 import fightData from '../../helpers/data/fightData';
+import progress from '../progress/progress';
 import './fight.scss';
 
 const printStrengthScore = () => {
@@ -17,11 +18,13 @@ const printStrengthScore = () => {
 const runAway = () => {
   fightData.increaseStrengthScore();
   printStrengthScore();
+  progress.getAllScores();
 };
 
 const fight = () => {
   fightData.decreaseStrengthScore();
   printStrengthScore();
+  progress.getAllScores();
 };
 
 export default { printStrengthScore, runAway, fight };
