@@ -3,6 +3,7 @@ import eat from './components/eat/eat';
 import play from './components/play/play';
 import fight from './components/fight/fight';
 import sleep from './components/sleep/sleep';
+import progress from './components/progress/progress';
 
 const events = () => {
   $('body').on('click', '#healthy-food-btn', eat.eatHealthyFood);
@@ -21,6 +22,7 @@ const init = () => {
   fight.printStrengthScore();
   sleep.printEnergyScore();
   events();
+  progress.getAllScores();
 };
 
 init();

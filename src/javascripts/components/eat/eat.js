@@ -1,5 +1,6 @@
 import utils from '../../helpers/utils';
 import eatData from '../../helpers/data/eatData';
+import progress from '../progress/progress';
 import './eat.scss';
 
 const printFullScore = () => {
@@ -17,11 +18,13 @@ const printFullScore = () => {
 const eatHealthyFood = () => {
   eatData.increaseFullScore();
   printFullScore();
+  progress.getAllScores();
 };
 
 const eatUnhealthyFood = () => {
   eatData.decreaseFullScore();
   printFullScore();
+  progress.getAllScores();
 };
 
 export default { printFullScore, eatHealthyFood, eatUnhealthyFood };

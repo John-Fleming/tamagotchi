@@ -1,5 +1,6 @@
 import utils from '../../helpers/utils';
 import funData from '../../helpers/data/funData';
+import progress from '../progress/progress';
 import './play.scss';
 
 const printFunScore = () => {
@@ -17,11 +18,13 @@ const printFunScore = () => {
 const superFunActivity = () => {
   funData.increaseFunScore();
   printFunScore();
+  progress.getAllScores();
 };
 
 const slightlyFunActivity = () => {
   funData.slightlyIncreaseFunScore();
   printFunScore();
+  progress.getAllScores();
 };
 
 export default { printFunScore, superFunActivity, slightlyFunActivity };

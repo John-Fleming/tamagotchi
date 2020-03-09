@@ -1,5 +1,6 @@
 import utils from '../../helpers/utils';
 import sleepData from '../../helpers/data/sleepData';
+import progress from '../progress/progress';
 import './sleep.scss';
 
 const printEnergyScore = () => {
@@ -17,11 +18,13 @@ const printEnergyScore = () => {
 const takeANap = () => {
   sleepData.increaseEnergyScore();
   printEnergyScore();
+  progress.getAllScores();
 };
 
 const deepSlumber = () => {
   sleepData.bigEnergyBoost();
   printEnergyScore();
+  progress.getAllScores();
 };
 
 export default { printEnergyScore, takeANap, deepSlumber };
