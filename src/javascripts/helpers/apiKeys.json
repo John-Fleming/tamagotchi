@@ -1,0 +1,11 @@
+{
+  "firebaseConfig" : {
+    "apiKey": "AIzaSyAgWPLaTN6lg07StNKVvZstxmLQcVX9k90",
+    "authDomain": "tamagotchi-ee100.firebaseapp.com",
+    "databaseURL": "https://tamagotchi-ee100.firebaseio.com",
+    "projectId": "tamagotchi-ee100",
+    "storageBucket": "tamagotchi-ee100.appspot.com",
+    "messagingSenderId": "676830042709",
+    "appId": "1:676830042709:web:346ca65e8bf6015665d2dc"
+  }
+}
